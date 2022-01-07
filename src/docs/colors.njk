@@ -1,3 +1,15 @@
 ---
 title: Colors
 ---
+
+<ul>
+  {% for colorToken in colors %}
+
+    <li class="background-{{ colorToken.name }}">
+      
+      <strong>{{ colorToken.name }}</strong> {{ colorToken.color }}
+
+    </li>
+
+  {% endfor %}
+</ul>

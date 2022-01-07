@@ -1,5 +1,12 @@
 ---
 layout: base.njk
-title: Hello World
+title: Docs
 ---
 
+<ul>
+  {% for page in collections.docs %}
+
+    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+
+  {% endfor %}
+</ul>

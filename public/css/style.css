@@ -1,4 +1,58 @@
+@charset "UTF-8";
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in src/_data/colors.js
+ */
+:root {
+  --color-primary: #5920df;
+  --color-on-primary: white;
+  --color-error: #df2040;
+  --color-on-error: #fff7f8;
+  --color-text: #463d5c;
+  --color-on-text: #b0abbe;
+  --color-background: #fcfbfe;
+}
+
+.background-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-on-primary {
+  color: var(--color-on-primary);
+}
+
+.background-error {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+}
+
+.color-error {
+  color: var(--color-error);
+}
+
+.color-on-error {
+  color: var(--color-on-error);
+}
+
+.background-text {
+  background-color: var(--color-text);
+  color: var(--color-on-text);
+}
+
+.color-text {
+  color: var(--color-text);
+}
+
+.color-on-text {
+  color: var(--color-on-text);
+}
+
 body {
-  background-color: white;
   font-family: system-ui, sans-serif;
+  background-color: var(--color-background);
 }
