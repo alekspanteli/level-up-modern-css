@@ -1,0 +1,10 @@
+.layout-grid{
+  --gap: 1rem;
+  display:grid;
+  gap: var(--gap);
+
+  &--columns{
+    grid-auto-flow: column;
+  }
+}
+

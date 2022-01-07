@@ -2,6 +2,7 @@
 @use "theme";
 @use "utilities/color";
 @use "utilities/layout";
+@use "utilities/grid";
 
 body {
   background-color: var(--color-background);

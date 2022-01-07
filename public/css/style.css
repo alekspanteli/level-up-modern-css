@@ -179,6 +179,15 @@ select {
   gap: 2rem;
 }
 
+.layout-grid {
+  --gap: 1rem;
+  display: grid;
+  gap: var(--gap);
+}
+.layout-grid--columns {
+  grid-auto-flow: column;
+}
+
 body {
   background-color: var(--color-background);
 }
