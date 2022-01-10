@@ -187,6 +187,14 @@ select {
 .layout-grid--columns {
   grid-auto-flow: column;
 }
+.layout-grid--auto-fit {
+  --min: 20ch;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+}
+.layout-grid--sidebar {
+  --sidebar-max: 20ch;
+  grid-template-columns: fit-content(var(--sidebar-max)) 1fr;
+}
 
 body {
   background-color: var(--color-background);

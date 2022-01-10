@@ -6,5 +6,13 @@
   &--columns{
     grid-auto-flow: column;
   }
+  &--auto-fit{
+    --min: 20ch;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  }
+  &--sidebar{
+    --sidebar-max: 20ch;
+    grid-template-columns: fit-content(var(--sidebar-max)) 1fr;
+  }
 }
 
