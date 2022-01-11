@@ -12,7 +12,14 @@
   }
   &--sidebar{
     --sidebar-max: 20ch;
-    grid-template-columns: fit-content(var(--sidebar-max)) 1fr;
+    --content-min: 80ch;
+    grid-template-columns: fit-content(var(--sidebar-max)) 
+    minmax(min(50vw, var(--content-min)), 1fr);
+  }
+
+  &--centered{
+    place-content: center;
+    // place-items: center;
   }
 }
 
