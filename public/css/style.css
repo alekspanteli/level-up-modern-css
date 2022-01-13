@@ -199,6 +199,16 @@ select {
 .layout-grid--centered {
   place-content: center;
 }
+.layout-grid--stack {
+  grid-template-areas: "stack";
+  place-items: center;
+}
+.layout-grid--stack > * {
+  grid-area: stack;
+  place-self: var(--place-self);
+  align-self: var(--align-self, var(--place-self));
+  justify-self: var(--justify-self, var(--place-self));
+}
 
 body {
   background-color: var(--color-background);

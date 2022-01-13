@@ -21,5 +21,16 @@
     place-content: center;
     // place-items: center;
   }
+
+  &--stack{
+    grid-template-areas: "stack";
+    place-items:center;
+    & > *{
+      grid-area: stack;
+      place-self: var(--place-self);
+      align-self: var(--align-self, var(--place-self));
+      justify-self: var(--justify-self, var(--place-self));
+    }
+  }
 }
 
