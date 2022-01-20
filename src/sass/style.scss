@@ -3,6 +3,7 @@
 @use "utilities/color";
 @use "utilities/layout";
 @use "utilities/grid";
+@use "templates";
 
 body {
   background-color: var(--color-background);
