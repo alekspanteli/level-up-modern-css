@@ -312,7 +312,7 @@ select {
 .template-blog article img {
   grid-column: main;
   justify-self: center;
-  margin-block: 4vh;
+  margin-block: max(68px, 8vh);
 }
 
 body {
