@@ -245,6 +245,32 @@ select {
   padding: 1rem;
 }
 
+.template-holy-grail {
+  display: grid;
+}
+.template-holy-grail header span {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.template-holy-grail nav a {
+  color: inherit;
+}
+.template-holy-grail aside {
+  background-color: var(--color-on-text);
+}
+.template-holy-grail aside a {
+  color: inherit;
+}
+.template-holy-grail nav,
+.template-holy-grail main,
+.template-holy-grail aside {
+  padding: 2rem;
+}
+.template-holy-grail header,
+.template-holy-grail footer {
+  padding: 1rem;
+}
+
 body {
   background-color: var(--color-background);
 }

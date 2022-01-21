@@ -37,3 +37,41 @@
   }
 
 }
+
+.template-holy-grail {
+  display: grid;
+
+  header {
+    span {
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+  }
+
+  nav {
+    a {
+      color: inherit;
+    }
+  }
+
+  aside {
+    background-color: var(--color-on-text);
+
+    a {
+      color: inherit;
+    }
+  }
+
+  nav,
+  main,
+  aside {
+    padding: 2rem;
+  }
+
+  header,
+  footer {
+    padding: 1rem;
+  }
+
+ 
+}
