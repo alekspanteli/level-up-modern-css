@@ -270,6 +270,28 @@ select {
 .template-holy-grail footer {
   padding: 1rem;
 }
+@media (min-width: 100ch) {
+  .template-holy-grail {
+    grid-template-areas: "header header header" "nav main aside" "footer footer footer";
+    grid-auto-rows: auto 1fr auto;
+    grid-auto-columns: 1fr minmax(50vw, 80ch) 1fr;
+  }
+  .template-holy-grail header {
+    grid-area: header;
+  }
+  .template-holy-grail nav {
+    grid-area: nav;
+  }
+  .template-holy-grail main {
+    grid-area: main;
+  }
+  .template-holy-grail aside {
+    grid-area: aside;
+  }
+  .template-holy-grail footer {
+    grid-area: footer;
+  }
+}
 
 body {
   background-color: var(--color-background);
