@@ -179,6 +179,10 @@ select {
   gap: 2rem;
 }
 
+.section, section {
+  margin-block: 8vh;
+}
+
 .layout-grid {
   --gap: 1rem;
   display: grid;
