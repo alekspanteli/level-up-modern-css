@@ -104,3 +104,40 @@
 
   
 }
+
+
+.template-blog {
+  header {
+    display: grid;
+    place-content: center;
+    min-height: 30vh;
+  }
+
+  main {
+    // width: min(100ch, 100vw);
+    margin: 8vh auto;
+  }
+
+  article {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns:
+      [main-start]
+      1fr
+      [article-start]
+      min(100vw - 2rem, 80ch)
+      [article-end]
+      1fr
+      [main-end];
+    
+    > *:not(img) {
+      grid-column: article;
+    }
+
+    img{
+      grid-column: main;
+      justify-self:center;
+      margin-block: 4vh;
+    }
+  }
+}
