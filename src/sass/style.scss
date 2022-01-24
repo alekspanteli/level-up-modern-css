@@ -1,6 +1,6 @@
 @use "reset";
 @use "theme";
-@use "global";
+@use "global" with ($type-scale: "goldenRatio");
 @use "utilities";
 @use "templates";
 
