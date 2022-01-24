@@ -1,8 +1,7 @@
 @use "reset";
 @use "theme";
-@use "utilities/color";
-@use "utilities/layout";
-@use "utilities/grid";
+@use "global";
+@use "utilities";
 @use "templates";
 
 body {
