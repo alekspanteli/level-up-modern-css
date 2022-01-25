@@ -130,42 +130,22 @@ select {
 
 h4,
 .h4 {
-  font-size: 1.618rem;
-  font-size: clamp(
-        1.08406rem,
-        4.53394vw + 1rem,
-        1.618rem
-      );
+  font-size: 1.067rem;
 }
 
 h3,
 .h3 {
-  font-size: 2.617924rem;
-  font-size: clamp(
-        1.75400908rem,
-        4.86391492vw + 1rem,
-        2.617924rem
-      );
+  font-size: 1.138489rem;
 }
 
 h2,
 .h2 {
-  font-size: 4.235801032rem;
-  font-size: clamp(
-        2.117900516rem,
-        6.117900516vw + 1rem,
-        4.235801032rem
-      );
+  font-size: 1.214767763rem;
 }
 
 h1,
 .h1 {
-  font-size: 6.8535260698rem;
-  font-size: clamp(
-        3.4267630349rem,
-        7.4267630349vw + 1rem,
-        6.8535260698rem
-      );
+  font-size: 1.2961572031rem;
 }
 
 :is(h1, h2, h3, h4, .h1, .h2, .h3, .h4) {
