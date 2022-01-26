@@ -176,6 +176,15 @@ h1,
   font-weight: var(--font-weight-bold);
 }
 
+article, .content {
+  --content-spacer: 1em;
+}
+article > * + *,
+article :where(ul:not([class]), ol:not([class])) li + li, .content > * + *,
+.content :where(ul:not([class]), ol:not([class])) li + li {
+  margin-block-start: var(--content-spacer);
+}
+
 .background-primary {
   background-color: var(--color-primary);
   color: var(--color-on-primary);

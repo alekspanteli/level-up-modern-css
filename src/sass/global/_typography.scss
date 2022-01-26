@@ -100,3 +100,36 @@ $level-size: $type-base-size;
 
   font-weight: var(--font-weight-bold);
 }
+
+
+// Content spacing
+$content-selectors: "article, .content" !default;
+$content-spacer: 1em !default;
+
+#{$content-selectors} {
+  --content-spacer: #{$content-spacer};
+
+  > * + *,
+  :where(ul:not([class]), ol:not([class])) li + li  {
+    margin-block-start: var(--content-spacer);
+  }
+
+  // :where(h2, h3:not(h2 + *)):where(:not(:first-child)) {
+  //   margin-block-start: 2em;
+  // }
+
+  // :where(ul, ol) + p {
+  //   margin-block-start: calc(var(--content-spacer) * 2);
+  // }
+
+  // > a:not([class]) {
+  //   display: inline-block;
+  // }
+
+  // blockquote {
+  //   margin-block: 2em;
+  //   padding: 0.5em 1.5em;
+  //   border-inline-start: 2px solid var(--color-primary);
+  //   font-size: 1rem * $type-scale-ratio;
+  // }
+}
