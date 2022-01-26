@@ -114,22 +114,22 @@ $content-spacer: 1em !default;
     margin-block-start: var(--content-spacer);
   }
 
-  // :where(h2, h3:not(h2 + *)):where(:not(:first-child)) {
-  //   margin-block-start: 2em;
-  // }
+  :where(h2, h3:not(h2 + *)):where(:not(:first-child)) {
+    margin-block-start: 2em;
+  }
 
-  // :where(ul, ol) + p {
-  //   margin-block-start: calc(var(--content-spacer) * 2);
-  // }
+  :where(ul, ol) + p {
+    margin-block-start: calc(var(--content-spacer) * 2);
+  }
 
-  // > a:not([class]) {
-  //   display: inline-block;
-  // }
+  > a:not([class]) {
+    display: inline-block;
+  }
 
-  // blockquote {
-  //   margin-block: 2em;
-  //   padding: 0.5em 1.5em;
-  //   border-inline-start: 2px solid var(--color-primary);
-  //   font-size: 1rem * $type-scale-ratio;
-  // }
+  blockquote {
+    margin-block: 2em;
+    padding: 0.5em 1.5em;
+    border-inline-start: 2px solid var(--color-primary);
+    font-size: 1rem * $type-scale-ratio;
+  }
 }

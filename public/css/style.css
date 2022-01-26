@@ -184,6 +184,21 @@ article :where(ul:not([class]), ol:not([class])) li + li, .content > * + *,
 .content :where(ul:not([class]), ol:not([class])) li + li {
   margin-block-start: var(--content-spacer);
 }
+article :where(h2, h3:not(h2 + *)):where(:not(:first-child)), .content :where(h2, h3:not(h2 + *)):where(:not(:first-child)) {
+  margin-block-start: 2em;
+}
+article :where(ul, ol) + p, .content :where(ul, ol) + p {
+  margin-block-start: calc(var(--content-spacer) * 2);
+}
+article > a:not([class]), .content > a:not([class]) {
+  display: inline-block;
+}
+article blockquote, .content blockquote {
+  margin-block: 2em;
+  padding: 0.5em 1.5em;
+  border-inline-start: 2px solid var(--color-primary);
+  font-size: 1.333rem;
+}
 
 .background-primary {
   background-color: var(--color-primary);
@@ -364,7 +379,6 @@ article :where(ul:not([class]), ol:not([class])) li + li, .content > * + *,
 }
 .template-blog article {
   display: grid;
-  row-gap: 1rem;
   grid-template-columns: [main-start] 1fr [article-start] min(100vw - 2rem, 80ch) [article-end] 1fr [main-end];
 }
 .template-blog article > *:not(img) {
