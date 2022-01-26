@@ -133,3 +133,13 @@ $content-spacer: 1em !default;
     font-size: 1rem * $type-scale-ratio;
   }
 }
+
+hr {
+  margin: 8vh 5vw;
+  border-style: dashed;
+  border-color: var(--color-primary);
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}

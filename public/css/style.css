@@ -200,6 +200,16 @@ article blockquote, .content blockquote {
   font-size: 1.333rem;
 }
 
+hr {
+  margin: 8vh 5vw;
+  border-style: dashed;
+  border-color: var(--color-primary);
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
 .background-primary {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
