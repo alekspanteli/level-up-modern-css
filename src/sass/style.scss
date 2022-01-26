@@ -1,7 +1,7 @@
 @use "reset";
 @use "theme";
-@use "global" with ($type-scale: "minorSecond");
-// @use "global";
+// @use "global" with ($type-scale: "goldenRatio");
+@use "global";
 @use "utilities";
 @use "templates";
 
