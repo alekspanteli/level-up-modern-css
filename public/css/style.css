@@ -126,6 +126,7 @@ select {
   --color-text: #463d5c;
   --color-on-text: #b0abbe;
   --color-background: #fcfbfe;
+  --color-links: var(--color-primary);
 }
 
 h4,
@@ -208,6 +209,27 @@ hr {
 
 strong {
   font-weight: var(--font-weight-bold);
+}
+
+a:not([class]) {
+  color: var(--color-links);
+}
+
+:is(a, button, input, textarea) {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentColor;
+}
+:is(a, button, input, textarea):focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+:is(a, button, input, textarea):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+:is(a, button, input, textarea):focus:not(:focus-visible) {
+  outline: none;
 }
 
 .background-primary {
@@ -309,6 +331,9 @@ strong {
 .navbar a:not([class]) {
   color: inherit;
   text-decoration: none;
+}
+.navbar a.navbar-image {
+  color: inherit;
 }
 .navbar--centered {
   display: flex;

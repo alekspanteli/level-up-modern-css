@@ -1,7 +1,10 @@
 @use "./color-tokens" as *;
 
+$color-links: "var(--color-primary)" !default;
+
 :root{
   @include color-tokens();
 
   --color-background: #{mix(white, $color-primary, 98%)};
+	--color-links: #{$color-links};
 }
