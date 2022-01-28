@@ -20,3 +20,12 @@ title: Docs
 
   {% endfor %}
 </ul>
+
+<h2>Components</h2>
+<ul>
+  {% for page in collections.components %}
+
+    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+
+  {% endfor %}
+</ul>
