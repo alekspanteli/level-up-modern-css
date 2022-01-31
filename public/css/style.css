@@ -320,6 +320,20 @@ a:not([class]) {
   justify-self: var(--justify-self, var(--place-self));
 }
 
+.image {
+  aspect-ratio: var(--image-aspect-ratio);
+  object-fit: cover;
+  max-height: var(--image-max-height);
+}
+@supports not (aspect-ratio: 1) {
+  .image {
+    height: var(--ratio-unsupported-height) !important;
+  }
+}
+.image--fullwidth {
+  width: 100%;
+}
+
 .navbar {
   padding: 1rem;
 }
