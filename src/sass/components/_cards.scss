@@ -1,0 +1,14 @@
+$card-gutter: "1.5rem" !default;
+
+$card-gutter-var: "var(--card-gutter, #{$card-gutter})";
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--card-gap, 1rem);
+    border-radius: var(--card-radius, 0.25rem);
+    background-color: var(--card-background, #fff);
+    box-shadow: 0 0.25rem 0.45rem -0.15rem rgba(0, 0, 0, 0.5);
+}

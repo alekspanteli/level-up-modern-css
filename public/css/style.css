@@ -311,6 +311,10 @@ a:not([class]) {
   --min: 20ch;
   grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
 }
+.layout-grid--auto-fill {
+  --min: 30ch;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--min), 100%), 1fr));
+}
 .layout-grid--sidebar {
   --sidebar-max: 20ch;
   --content-min: 80ch;
@@ -474,6 +478,17 @@ a:not([class]) {
 .button-icon {
   border-radius: 50%;
   min-width: unset;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--card-gap, 1rem);
+  border-radius: var(--card-radius, 0.25rem);
+  background-color: var(--card-background, #fff);
+  box-shadow: 0 0.25rem 0.45rem -0.15rem rgba(0, 0, 0, 0.5);
 }
 
 .template-dashboard {
