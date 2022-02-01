@@ -289,6 +289,16 @@ a:not([class]) {
   margin-block: 8vh;
 }
 
+.inclusively-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
 .layout-grid {
   --gap: 1rem;
   display: grid;
@@ -415,6 +425,55 @@ a:not([class]) {
 }
 .hero__content > :only-child {
   margin: 0;
+}
+
+.button {
+  --button-background: var(--color-primary);
+  --button-color: var(--color-on-primary);
+  --outline-color: transparent;
+  text-decoration: none;
+  padding: 0.25em 0.75em;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 0.25em;
+  background-color: var(--button-background);
+  color: var(--button-color);
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  transition: none 180ms ease-in-out;
+  transition-property: background-color, color, border-color;
+}
+.button:hover, .button:active {
+  background-color: var(--button-color);
+  color: var(--button-background);
+  border-color: currentColor;
+}
+.button:focus {
+  box-shadow: 0 0 0 max(0.15em, 2px) var(--button-focus-inner, var(--button-color)), 0 0 0 max(0.3em, 4px) var(--button-focus-outer, var(--button-background));
+}
+.button--error {
+  --button-background: var(--color-error);
+  --button-color: var(--color-on-error);
+}
+.button--text {
+  --button-background: var(--color-text);
+  --button-color: var(--color-on-text);
+}
+.button__icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+.button-icon {
+  border-radius: 50%;
+  min-width: unset;
 }
 
 .template-dashboard {
