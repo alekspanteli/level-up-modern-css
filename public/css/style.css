@@ -380,6 +380,43 @@ a:not([class]) {
   order: -1;
 }
 
+.hero {
+  --hero-min-height: 30vh;
+  --hero-padding: 2rem;
+  --hero-gap: 2vh;
+  display: grid;
+  min-height: var(--hero-min-height);
+  padding: var(--hero-padding);
+  gap: var(--hero-gap);
+}
+.hero a:not([class]) {
+  color: inherit;
+}
+.hero--centered {
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.hero--image-stack {
+  --hero-padding: 0;
+  --hero-min-height: 0;
+  --hero-height: max(40vh, 15rem);
+}
+.hero--image-stack img {
+  width: 100%;
+  object-fit: cover;
+  height: var(--hero-height);
+}
+.hero__content {
+  --content-text-align: center;
+  --content-padding: 1rem;
+  padding-inline: var(--content-padding);
+  text-align: var(--content-text-align);
+}
+.hero__content > :only-child {
+  margin: 0;
+}
+
 .template-dashboard {
   display: grid;
   grid-template-areas: "header header" "nav main" "nav footer";
