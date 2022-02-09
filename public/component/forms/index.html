@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/docs.css">
+</head>
+<body>
+  <header class="hero hero--centered background-primary" style="--hero-min-height: 20vh;">
+    <div class="hero__content container">
+      <h1>Forms</h1>
+
+      
+      <a href="/">All Docs</a>
+      
+    </div>
+  </header>
+  <main class="section container content">
+    
+<form>
+    <div class="form-group">
+        <label for="text-input">Text input</label>
+        <input class="form-field" type="text" id="text-input" name="text-input" />
+    </div>
+
+    <div class="form-group">
+        <label for="textarea">Textarea</label>
+        <textarea class="form-field" id="textarea" name="textarea"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="standard-select">Standard Select</label>
+        <div class="form-field select">
+            <select id="standard-select" name="standard-select">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+                <option value="Option 5">Option 5</option>
+            </select>
+        </div>
+    </div>
+	
+	<div class="form-group">
+    <label class="form-control">
+      <input type="checkbox" name="checkbox" />
+      Checkbox
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label class="form-control">
+      <input type="checkbox" name="checked" checked />
+      Checkbox - checked
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label class="form-control">
+      <input type="radio" name="radio" />
+      Radio
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label class="form-control">
+      <input type="radio" name="radio" checked />
+      Radio - checked
+    </label>
+  </div>
+</form>
+  </main>
+</body>
+</html>
